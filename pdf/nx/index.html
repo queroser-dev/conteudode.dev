@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh"
+    content="10; url=https://raw.githubusercontent.com/queroser-dev/conteudode.dev/main/Nx%20-%20Arquitetura%20em%20camadas%2C%20responsabilidades%20e%20relacionamentos%20-%20Guilherme%20Siquinelli%20-%202023.pdf">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+
+  <title>Arquitetura em camadas, uma abordagem sobre responsabilidades e relacionamentos</title>
+
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+
+    main {
+      max-width: 640px;
+    }
+
+    h4 {
+      font-weight: 300;
+      font-style: italic;
+    }
+  </style>
+
+</head>
+
+<body onload="countdown()">
+  <main>
+    <h1>
+      Arquitetura em camadas, uma abordagem sobre responsabilidades e relacionamentos.
+    </h1>
+    <h2>Autor: <strong>Guilherme Siquinelli</strong></h2>
+    <h3>Ano: <strong>2023</strong></h3>
+    <h4>Aguarde o inicio do download...</h4>
+    <p>Iniciando download em <strong id="cd"></strong> segundos</p>
+  </main>
+
+  <script>
+    let current = 10
+    let counter = new Text(current)
+    function countdown() {
+      const interval = setInterval(() => {
+        if (current < 1) {
+          clearInterval(interval)
+        }
+        counter.nodeValue = current--
+      }, 1000)
+    }
+    cd.appendChild(counter)
+  </script>
+</body>
+
+</html>
